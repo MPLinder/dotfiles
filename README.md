@@ -1,3 +1,5 @@
 # dotfiles
 
-Creates symlinks to dotfiles. Install with `python install.py`.
+Creates symlinks to dotfiles, installs Homebrew Brewfile contents.
+
+Install with `python install.py`.

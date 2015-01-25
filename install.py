@@ -15,7 +15,7 @@ def install_sym(src, target):
 
 # Install symlinks
 for f in glob('*'):
-    if any((f.startswith(x) for x in ('README', 'install'))):
+    if any((f.startswith(x) for x in ('README', 'install', 'Brewfile'))):
         continue
     target = os.path.normpath(os.path.join(home, '.%s'%f))
     src = os.path.normpath(os.path.join(os.getcwd(), f))

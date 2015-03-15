@@ -29,3 +29,5 @@ _pip_completion()
 }
 complete -o default -F _pip_completion pip
 # pip bash completion end
+
+alias clean_pyc='find . \( -iname \*\.pyc -o -iname \*\.pyo \) -print0 | xargs -0 rm -f'

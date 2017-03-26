@@ -42,6 +42,8 @@ export PATH
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
+HISTTIMEFORMAT="%y/%m/%d %T "
+
 # Setting GOPATH
 GOPATH=~/gopath
 export GOPATH

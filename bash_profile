@@ -3,7 +3,7 @@ if [ -e $HOME/.bashrc ]; then
 fi
 
 function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }
 
 function parse_git_branch () {
@@ -31,3 +31,19 @@ complete -o default -F _pip_completion pip
 # pip bash completion end
 
 alias clean_pyc='find . \( -iname \*\.pyc -o -iname \*\.pyo \) -print0 | xargs -0 rm -f'
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
+
+# Setting GOPATH
+GOPATH=~/gopath
+export GOPATH
+
+export PATH=$PATH:$GOPATH/bin

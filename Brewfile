@@ -1,2 +1,2 @@
-install ack
-install tmux
+brew ack
+brew tmux

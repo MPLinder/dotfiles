@@ -23,3 +23,6 @@ for f in glob('*'):
 
 # Homebrew
 os.system('ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; brew tap homebrew/boneyard; brew bundle')
+
+# Oh My Zsh
+os.system(sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)")

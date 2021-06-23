@@ -1,2 +1,2 @@
-brew ack
-brew tmux
+brew "ack"
+brew "tmux"

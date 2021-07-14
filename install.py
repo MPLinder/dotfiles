@@ -11,10 +11,6 @@ os.system('sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/too
 # Oh My Zosh will insert it's own zshrc. Remove it so that I can add the one I want
 os.system('rm ~/.zshrc')
 
-# Oh My Tmux
-os.system('git clone https://github.com/gpakosz/.tmux ~/.tmux')
-os.system('ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf')
-
 def install_sym(src, target):
     if os.path.exists(target):
         print >>stderr, "skipping %s, already exists" % target

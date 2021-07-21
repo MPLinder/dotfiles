@@ -3,3 +3,6 @@
 	email = michael.p.linder@gmail.com
 [color]
 	ui = auto
+
+[grep]
+        lineNumber = true

@@ -6,3 +6,6 @@
 
 [grep]
         lineNumber = true
+
+[core]
+	pager = cat

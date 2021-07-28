@@ -8,4 +8,4 @@
         lineNumber = true
 
 [core]
-	pager = cat
+	pager = more -R

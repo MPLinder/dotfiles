@@ -1,4 +1,5 @@
 # dotfiles
+test
 
 Creates symlinks to dotfiles, installs Homebrew Brewfile contents.
 

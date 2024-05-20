@@ -13,9 +13,9 @@ os.system('rm ~/.zshrc')
 
 def install_sym(src, target):
     if os.path.exists(target):
-        print >>stderr, "skipping %s, already exists" % target
+        print("skipping %s, already exists" % target)
     else:
-        print "installing %s to %s" % (src, target)
+        print("installing %s to %s" % (src, target))
         os.symlink(src, target)
 
 # Install symlinks
@@ -27,4 +27,4 @@ for f in glob('*'):
     install_sym(src, target)
 
 # Homebrew
-os.system('ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"; brew bundle')
+os.system('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; brew bundle')
